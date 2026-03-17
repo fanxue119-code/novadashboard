@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老师合作要素表</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+        }
+        .header h1 { font-size: 24px; margin-bottom: 5px; }
+        .header p { font-size: 13px; opacity: 0.9; }
+        .table-container { padding: 20px; overflow-x: auto; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+            vertical-align: top;
+        }
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #495057;
+            position: sticky;
+            top: 0;
+        }
+        tr:hover { background: #f8f9fa; }
+        .name-cell { font-weight: 600; color: #212529; }
+        .cost-section {
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        .cost-section-title {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 6px;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        .cost-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3px;
+        }
+        .cost-label { color: #6c757d; }
+        .cost-value { font-weight: 500; color: #495057; }
+        .total {
+            font-weight: 600;
+            color: #f5576c;
+        }
+        .footer { text-align: center; padding: 15px; color: #6c757d; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💰 老师合作要素表</h1>
+            <p>价格 · 机票 · 酒店 · Per Diem · 特殊要求</p>
+        </div>
+        <div class="table-container">
+            <table id="cost-table">
+                <thead>
+                    <tr>
+                        <th style="min-width: 150px;">老师</th>
+                        <th style="min-width: 200px;">课程费用</th>
+                        <th style="min-width: 150px;">机票要求</th>
+                        <th style="min-width: 150px;">住宿要求</th>
+                        <th style="min-width: 150px;">每日津贴</th>
+                        <th style="min-width: 150px;">其他费用</th>
+                        <th style="min-width: 200px;">特殊要求/备注</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <p>最后更新: <span id="last-updated"></span></p>
+        </div>
+    </div>
+    <script>
+        let teachers = [];
+
+        async function loadData() {
+            try {
+                const response = await fetch('teachers_manual.json');
+                const data = await response.json();
+                teachers = data.teachers || [];
+                teachers.sort((a, b) => {
+                    const rosterOrder = { 'main': 0, 'backup': 1, 'second': 2, 'dropped': 3 };
+                    const rosterA = rosterOrder[a.roster] ?? 99;
+                    const rosterB = rosterOrder[b.roster] ?? 99;
+                    if (rosterA !== rosterB) return rosterA - rosterB;
+                    return a.name.localeCompare(b.name);
+                });
+                renderTable();
+            } catch (error) {
+                console.error('加载失败:', error);
+                document.getElementById('cost-table').querySelector('tbody').innerHTML = '<tr><td colspan="7" style="text-align:center; padding: 40px;">加载失败</td></tr>';
+            }
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('cost-table').querySelector('tbody');
+            tbody.innerHTML = '';
+
+            teachers.forEach(teacher => {
+                const tr = document.createElement('tr');
+                const costs = teacher.costDetails || {};
+
+                // 姓名
+                const nameTd = document.createElement('td');
+                nameTd.className = 'name-cell';
+                nameTd.textContent = teacher.name;
+                tr.appendChild(nameTd);
+
+                // 课程费用
+                const classesTd = document.createElement('td');
+                const classes = costs.classes || {};
+                classesTd.innerHTML = `
+                    <div class="cost-section">
+                        <div class="cost-row">
+                            <span class="cost-label">原价:</span>
+                            <span class="cost-value">${classes.originalRate || '-'}</span>
+                        </div>
+                        <div class="cost-row">
+                            <span class="cost-label">成交价:</span>
+                            <span class="cost-value">${classes.negotiatedRate || '-'}</span>
+                        </div>
+                        ${classes.unitPrice ? `
+                        <div class="cost-row">
+                            <span class="cost-label">单节:</span>
+                            <span class="cost-value">${classes.currency || ''}${classes.unitPrice}</span>
+                        </div>
+                        ` : ''}
+                        ${classes.totalTeachingFee ? `
+                        <div class="cost-row total">
+                            <span class="cost-label">总计:</span>
+                            <span class="cost-value">${classes.currency || ''}${classes.totalTeachingFee}</span>
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+                tr.appendChild(classesTd);
+
+                // 机票
+                const flightsTd = document.createElement('td');
+                const flights = costs.flights || {};
+                flightsTd.innerHTML = `
+                    <div class="cost-section">
+                        <div class="cost-row">
+                            <span class="cost-label">要求:</span>
+                            <span class="cost-value">${flights.requirement || '-'}</span>
+                        </div>
+                        ${flights.estimatedCost ? `
+                        <div class="cost-row">
+                            <span class="cost-label">预估:</span>
+                            <span class="cost-value">${flights.currency || ''}${flights.estimatedCost}</span>
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+                tr.appendChild(flightsTd);
+
+                // 住宿
+                const accTd = document.createElement('td');
+                const acc = costs.accommodation || {};
+                accTd.innerHTML = `
+                    <div class="cost-section">
+                        <div class="cost-row">
+                            <span class="cost-label">房型:</span>
+                            <span class="cost-value">${acc.roomType || '-'}</span>
+                        </div>
+                        ${acc.nights ? `
+                        <div class="cost-row">
+                            <span class="cost-label">晚数:</span>
+                            <span class="cost-value">${acc.nights}晚</span>
+                        </div>
+                        ` : ''}
+                        ${acc.unitPricePerNight ? `
+                        <div class="cost-row">
+                            <span class="cost-label">单价:</span>
+                            <span class="cost-value">${acc.currency || ''}${acc.unitPricePerNight}/晚</span>
+                        </div>
+                        ` : ''}
+                        ${acc.total ? `
+                        <div class="cost-row total">
+                            <span class="cost-label">总计:</span>
+                            <span class="cost-value">${acc.currency || ''}${acc.total}</span>
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+                tr.appendChild(accTd);
+
+                // Per Diem
+                const perDiemTd = document.createElement('td');
+                const perDiem = costs.perDiem || {};
+                perDiemTd.innerHTML = `
+                    <div class="cost-section">
+                        <div class="cost-row">
+                            <span class="cost-label">每日:</span>
+                            <span class="cost-value">${perDiem.amountPerDay ? perDiem.currency + perDiem.amountPerDay + '/天' : '-'}</span>
+                        </div>
+                        ${perDiem.days ? `
+                        <div class="cost-row">
+                            <span class="cost-label">天数:</span>
+                            <span class="cost-value">${perDiem.days}天</span>
+                        </div>
+                        ` : ''}
+                        ${perDiem.total ? `
+                        <div class="cost-row total">
+                            <span class="cost-label">总计:</span>
+                            <span class="cost-value">${perDiem.currency || ''}${perDiem.total}</span>
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+                tr.appendChild(perDiemTd);
+
+                // 其他费用
+                const otherTd = document.createElement('td');
+                const other = costs.otherCosts || {};
+                otherTd.innerHTML = `
+                    <div class="cost-section">
+                        <div class="cost-row">
+                            <span class="cost-label">签证/保险:</span>
+                            <span class="cost-value">${other.visaInsurance || '-'}</span>
+                        </div>
+                        <div class="cost-row">
+                            <span class="cost-label">交通:</span>
+                            <span class="cost-value">${other.transport || '-'}</span>
+                        </div>
+                        <div class="cost-row">
+                            <span class="cost-label">其他:</span>
+                            <span class="cost-value">${other.other || '-'}</span>
+                        </div>
+                    </div>
+                `;
+                tr.appendChild(otherTd);
+
+                // 备注
+                const notesTd = document.createElement('td');
+                notesTd.innerHTML = other.notes || '-';
+                tr.appendChild(notesTd);
+
+                tbody.appendChild(tr);
+            });
+
+            document.getElementById('last-updated').textContent = new Date().toLocaleString('zh-CN');
+        }
+
+        loadData();
+    </script>
+</body>
+</html>

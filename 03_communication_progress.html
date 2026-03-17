@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老师沟通进度表</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+        }
+        .header h1 { font-size: 24px; margin-bottom: 5px; }
+        .header p { font-size: 13px; opacity: 0.9; }
+        .table-container { padding: 20px; overflow-x: auto; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        th, td {
+            padding: 12px 10px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+            vertical-align: top;
+        }
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #495057;
+            position: sticky;
+            top: 0;
+        }
+        tr:hover { background: #f8f9fa; }
+        .name-cell { font-weight: 600; color: #212529; }
+        .ball {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: help;
+        }
+        .ball-己 {
+            background: #007bff;
+            color: white;
+        }
+        .ball-对 {
+            background: #dc3545;
+            color: white;
+        }
+        .ball-双 {
+            background: #ffc107;
+            color: #212529;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .status-待签合同 { background: #d4edda; color: #155724; }
+        .status-谈价中 { background: #fff3cd; color: #856404; }
+        .status-洽谈中 { background: #fff3cd; color: #856404; }
+        .status-婉拒 { background: #f8d7da; color: #721c24; }
+        .status-已放弃 { background: #e2e3e5; color: #383d41; }
+        .status-条款确认中 { background: #d1ecf1; color: #0c5460; }
+        .status-等待对方回复 { background: #fff3cd; color: #856404; }
+        .status-未处理 { background: #e2e3e5; color: #383d41; }
+        .key-points {
+            max-width: 300px;
+            font-size: 12px;
+        }
+        .key-points ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .key-points li {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+        .key-points li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #4facfe;
+            font-weight: bold;
+        }
+        .next-action {
+            font-weight: 500;
+            color: #00f2fe;
+            margin-bottom: 4px;
+        }
+        .action-note {
+            font-size: 11px;
+            color: #6c757d;
+            font-style: italic;
+        }
+        .email-count {
+            font-size: 12px;
+            color: #6c757d;
+        }
+        .last-date {
+            font-size: 11px;
+            color: #6c757d;
+        }
+        .last-action {
+            font-size: 12px;
+            color: #495057;
+            font-style: italic;
+        }
+        .footer { text-align: center; padding: 15px; color: #6c757d; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💬 老师沟通进度表</h1>
+            <p>邮件数量 · 皮球在谁那 · 沟通要点 · 下一步行动</p>
+        </div>
+        <div class="table-container">
+            <table id="progress-table">
+                <thead>
+                    <tr>
+                        <th style="min-width: 150px;">老师</th>
+                        <th style="min-width: 100px;">状态</th>
+                        <th style="min-width: 80px;">皮球</th>
+                        <th style="min-width: 100px;">邮件</th>
+                        <th style="min-width: 200px;">最后行动</th>
+                        <th style="min-width: 350px;">沟通要点</th>
+                        <th style="min-width: 200px;">下一步行动</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <p>最后更新: <span id="last-updated"></span></p>
+        </div>
+    </div>
+    <script>
+        let teachers = [];
+
+        async function loadData() {
+            try {
+                const response = await fetch('teachers_manual.json');
+                const data = await response.json();
+                teachers = data.teachers || [];
+                teachers.sort((a, b) => {
+                    const rosterOrder = { 'main': 0, 'backup': 1, 'second': 2, 'dropped': 3 };
+                    const rosterA = rosterOrder[a.roster] ?? 99;
+                    const rosterB = rosterOrder[b.roster] ?? 99;
+                    if (rosterA !== rosterB) return rosterA - rosterB;
+                    return a.name.localeCompare(b.name);
+                });
+                renderTable();
+            } catch (error) {
+                console.error('加载失败:', error);
+                document.getElementById('progress-table').querySelector('tbody').innerHTML = '<tr><td colspan="7" style="text-align:center; padding: 40px;">加载失败</td></tr>';
+            }
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('progress-table').querySelector('tbody');
+            tbody.innerHTML = '';
+
+            const ballSideMap = {
+                '己': { text: '己', class: 'ball-己', title: '球在己方 - 需要我方行动' },
+                '对': { text: '对', class: 'ball-对', title: '球在对方 - 等待对方回复' },
+                '双': { text: '双', class: 'ball-双', title: '双方交互 - 正在协商' }
+            };
+
+            teachers.forEach(teacher => {
+                const tr = document.createElement('tr');
+
+                // 姓名
+                const nameTd = document.createElement('td');
+                nameTd.className = 'name-cell';
+                nameTd.textContent = teacher.name;
+                tr.appendChild(nameTd);
+
+                // 状态
+                const statusTd = document.createElement('td');
+                const statusClass = 'status-' + (teacher.status || '未处理');
+                statusTd.innerHTML = `<span class="status-badge ${statusClass}">${teacher.status || '未处理'}</span>`;
+                tr.appendChild(statusTd);
+
+                // 皮球
+                const ballTd = document.createElement('td');
+                const ballSide = teacher.ballSide || '对';
+                const ball = ballSideMap[ballSide] || ballSideMap['对'];
+                ballTd.innerHTML = `<span class="ball ${ball.class}" title="${ball.title}">${ball.text}</span>`;
+                tr.appendChild(ballTd);
+
+                // 邮件
+                const emailTd = document.createElement('td');
+                emailTd.innerHTML = `
+                    <div class="email-count">${teacher.messageCount || 0} 封</div>
+                    ${teacher.lastDate ? `<div class="last-date">${formatDate(teacher.lastDate)}</div>` : ''}
+                `;
+                tr.appendChild(emailTd);
+
+                // 最后行动
+                const lastActionTd = document.createElement('td');
+                lastActionTd.innerHTML = `
+                    <div class="last-action">${teacher.lastAction || '-'}</div>
+                    ${teacher.lastActionDate ? `<div class="last-date">${teacher.lastActionDate}</div>` : ''}
+                `;
+                tr.appendChild(lastActionTd);
+
+                // 沟通要点
+                const keyPointsTd = document.createElement('td');
+                keyPointsTd.className = 'key-points';
+                if (teacher.keyPoints && teacher.keyPoints.length > 0) {
+                    const ul = document.createElement('ul');
+                    teacher.keyPoints.forEach(point => {
+                        const li = document.createElement('li');
+                        li.textContent = point;
+                        ul.appendChild(li);
+                    });
+                    keyPointsTd.appendChild(ul);
+                }
+                tr.appendChild(keyPointsTd);
+
+                // 下一步行动
+                const actionTd = document.createElement('td');
+                actionTd.innerHTML = `
+                    <div class="next-action">${teacher.nextAction || '无'}</div>
+                    ${teacher.actionNote ? `<div class="action-note">${teacher.actionNote}</div>` : ''}
+                `;
+                tr.appendChild(actionTd);
+
+                tbody.appendChild(tr);
+            });
+
+            document.getElementById('last-updated').textContent = new Date().toLocaleString('zh-CN');
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            // 简化日期显示
+            return dateStr.replace(/ \+.*$/, '').replace(/ \(.*$/, '');
+        }
+
+        loadData();
+    </script>
+</body>
+</html>

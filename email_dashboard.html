@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Dance Camp - 邮件跟进表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-item .label {
+            font-size: 12px;
+            color: #6c757d;
+            margin-top: 4px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            padding: 20px 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        th, td {
+            padding: 12px 10px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #495057;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .name-cell {
+            font-weight: 600;
+            color: #212529;
+        }
+
+        .roster-select {
+            padding: 4px 8px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 12px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .status-badge {
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .status-待签合同 {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-谈价中 {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-洽谈中 {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-婉拒 {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .status-未处理 {
+            background: #e2e3e5;
+            color: #383d41;
+        }
+
+        .ball {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            font-size: 11px;
+            font-weight: bold;
+            cursor: help;
+        }
+
+        .ball-己 {
+            background: #007bff;
+            color: white;
+        }
+
+        .ball-对 {
+            background: #dc3545;
+            color: white;
+        }
+
+        .ball-双 {
+            background: #ffc107;
+            color: #212529;
+        }
+
+        .key-points {
+            max-width: 250px;
+        }
+
+        .key-points ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .key-points li {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 4px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .key-points li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .next-action {
+            font-weight: 500;
+            color: #667eea;
+        }
+
+        .action-note {
+            font-size: 11px;
+            color: #6c757d;
+            margin-top: 4px;
+            font-style: italic;
+        }
+
+        .cost-details {
+            font-size: 11px;
+            max-width: 200px;
+        }
+
+        .cost-item {
+            margin-bottom: 4px;
+        }
+
+        .cost-label {
+            color: #6c757d;
+        }
+
+        .cost-value {
+            font-weight: 500;
+            color: #495057;
+        }
+
+        .email-count {
+            font-size: 11px;
+            color: #6c757d;
+        }
+
+        .last-date {
+            font-size: 11px;
+            color: #6c757d;
+        }
+
+        .contact-type {
+            font-size: 11px;
+            color: #6c757d;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 12px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .roster-select {
+                -webkit-appearance: none;
+                appearance: none;
+                border: none;
+                background: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📧 NOVA Dance Camp 邮件跟进表</h1>
+            <p>自动更新邮件数据 · 手动维护状态和沟通要点</p>
+        </div>
+
+        <div class="stats" id="stats"></div>
+
+        <div class="table-container">
+            <table id="teachers-table">
+                <thead>
+                    <tr>
+                        <th>老师</th>
+                        <th>阵容</th>
+                        <th>状态</th>
+                        <th>皮球</th>
+                        <th>邮件</th>
+                        <th>沟通要点</th>
+                        <th>下一步行动</th>
+                        <th>费用</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>最后更新: <span id="last-updated"></span> | 数据来源: teachers_manual.json + 邮件存档</p>
+        </div>
+    </div>
+
+    <script>
+        let teachers = [];
+        const rosterOptions = ['本期主阵容', 'Backup', '第二期', '已放弃'];
+        const ballSideMap = {
+            '己': { text: '己', class: 'ball-己', title: '球在己方 - 需要我方行动' },
+            '对': { text: '对', class: 'ball-对', title: '球在对方 - 等待对方回复' },
+            '双': { text: '双', class: 'ball-双', title: '双方交互 - 正在协商' }
+        };
+
+        async function loadTeachers() {
+            try {
+                const response = await fetch('teachers_manual.json');
+                const data = await response.json();
+                teachers = data.teachers || [];
+                teachers.sort((a, b) => {
+                    // main 在前，然后 backup，其他在后
+                    const rosterOrder = { 'main': 0, 'backup': 1 };
+                    const rosterA = rosterOrder[a.roster] ?? 99;
+                    const rosterB = rosterOrder[b.roster] ?? 99;
+                    if (rosterA !== rosterB) return rosterA - rosterB;
+                    return a.name.localeCompare(b.name);
+                });
+                renderTable();
+                updateStats();
+            } catch (error) {
+                console.error('加载老师数据失败:', error);
+                document.getElementById('table-body').innerHTML = '<tr><td colspan="8" style="text-align:center; padding: 40px;">加载失败，请确保 teachers_manual.json 文件存在</td></tr>';
+            }
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('table-body');
+            tbody.innerHTML = '';
+
+            teachers.forEach(teacher => {
+                const tr = document.createElement('tr');
+
+                // 名字
+                const nameTd = document.createElement('td');
+                nameTd.className = 'name-cell';
+                nameTd.innerHTML = `
+                    <div>${teacher.name}</div>
+                    ${teacher.contactType ? `<div class="contact-type">${teacher.contactType}</div>` : ''}
+                    ${teacher.email ? `<div class="contact-type">${teacher.email}</div>` : ''}
+                `;
+                tr.appendChild(nameTd);
+
+                // 阵容下拉框
+                const rosterTd = document.createElement('td');
+                const select = document.createElement('select');
+                select.className = 'roster-select';
+                rosterOptions.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    if ((option === '本期主阵容' && teacher.roster === 'main') ||
+                        (option === 'Backup' && teacher.roster === 'backup') ||
+                        (option === '第二期' && teacher.roster === 'second') ||
+                        (option === '已放弃' && teacher.roster === 'dropped')) {
+                        opt.selected = true;
+                    }
+                    select.appendChild(opt);
+                });
+                select.addEventListener('change', (e) => {
+                    const value = e.target.value;
+                    const rosterMap = { '本期主阵容': 'main', 'Backup': 'backup', '第二期': 'second', '已放弃': 'dropped' };
+                    teacher.roster = rosterMap[value];
+                    updateStats();
+                });
+                rosterTd.appendChild(select);
+                tr.appendChild(rosterTd);
+
+                // 状态
+                const statusTd = document.createElement('td');
+                const statusClass = 'status-' + (teacher.status || '未处理');
+                statusTd.innerHTML = `<span class="status-badge ${statusClass}">${teacher.status || '未处理'}</span>`;
+                tr.appendChild(statusTd);
+
+                // 皮球
+                const ballTd = document.createElement('td');
+                const ballSide = teacher.ballSide || '对';
+                const ball = ballSideMap[ballSide] || ballSideMap['对'];
+                ballTd.innerHTML = `<span class="ball ${ball.class}" title="${ball.title}">${ball.text}</span>`;
+                tr.appendChild(ballTd);
+
+                // 邮件
+                const emailTd = document.createElement('td');
+                emailTd.innerHTML = `
+                    <div class="email-count">${teacher.messageCount || 0} 封</div>
+                    ${teacher.lastDate ? `<div class="last-date">${formatDate(teacher.lastDate)}</div>` : ''}
+                `;
+                tr.appendChild(emailTd);
+
+                // 沟通要点
+                const keyPointsTd = document.createElement('td');
+                keyPointsTd.className = 'key-points';
+                if (teacher.keyPoints && teacher.keyPoints.length > 0) {
+                    const ul = document.createElement('ul');
+                    teacher.keyPoints.forEach(point => {
+                        const li = document.createElement('li');
+                        li.textContent = point;
+                        ul.appendChild(li);
+                    });
+                    keyPointsTd.appendChild(ul);
+                }
+                tr.appendChild(keyPointsTd);
+
+                // 下一步行动
+                const actionTd = document.createElement('td');
+                actionTd.innerHTML = `
+                    <div class="next-action">${teacher.nextAction || '无'}</div>
+                    ${teacher.actionNote ? `<div class="action-note">${teacher.actionNote}</div>` : ''}
+                `;
+                tr.appendChild(actionTd);
+
+                // 费用
+                const costTd = document.createElement('td');
+                costTd.className = 'cost-details';
+                const classes = teacher.costDetails?.classes || {};
+                if (classes.negotiatedRate && classes.negotiatedRate !== '待确认') {
+                    costTd.innerHTML = `<div class="cost-item"><span class="cost-label">课程费:</span> <span class="cost-value">${classes.negotiatedRate}</span></div>`;
+                } else if (classes.originalRate) {
+                    costTd.innerHTML = `<div class="cost-item"><span class="cost-label">课程费:</span> <span class="cost-value">${classes.originalRate}</span></div>`;
+                }
+                tr.appendChild(costTd);
+
+                tbody.appendChild(tr);
+            });
+
+            // 更新最后更新时间
+            const lastUpdated = document.getElementById('last-updated');
+            const timestamp = new Date().toLocaleString('zh-CN');
+            lastUpdated.textContent = timestamp;
+        }
+
+        function updateStats() {
+            const statsDiv = document.getElementById('stats');
+            const mainCount = teachers.filter(t => t.roster === 'main').length;
+            const backupCount = teachers.filter(t => t.roster === 'backup').length;
+            const totalEmails = teachers.reduce((sum, t) => sum + (t.messageCount || 0), 0);
+
+            statsDiv.innerHTML = `
+                <div class="stat-item">
+                    <div class="number">${teachers.length}</div>
+                    <div class="label">总老师数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">${mainCount}</div>
+                    <div class="label">本期主阵容</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">${backupCount}</div>
+                    <div class="label">Backup</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">${totalEmails}</div>
+                    <div class="label">总邮件数</div>
+                </div>
+            `;
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            // 简化日期显示
+            return dateStr.replace(/ \+.*$/, '').replace(/ \(.*$/, '');
+        }
+
+        // 页面加载时获取数据
+        loadTeachers();
+
+        // 每 30 秒刷新一次数据
+        setInterval(loadTeachers, 30000);
+    </script>
+</body>
+</html>

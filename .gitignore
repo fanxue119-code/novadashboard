@@ -1,0 +1,19 @@
+# 敏感配置
+credentials.json
+token.json
+
+# 邮件存档（包含隐私信息）
+threads/
+
+# 索引文件（包含元数据）
+thread_index.json
+message_index.json
+message_thread_map.json
+
+# 老师数据（包含邮箱、价格等敏感信息）
+teachers_manual.json
+
+# 临时文件
+*.pyc
+__pycache__/
+*.log

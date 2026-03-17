@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老师信息表</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+        }
+        .header h1 { font-size: 24px; margin-bottom: 5px; }
+        .header p { font-size: 13px; opacity: 0.9; }
+        .table-container { padding: 20px; overflow-x: auto; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #495057;
+            position: sticky;
+            top: 0;
+        }
+        tr:hover { background: #f8f9fa; }
+        .name-cell { font-weight: 600; color: #212529; }
+        .roster-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .roster-main { background: #d4edda; color: #155724; }
+        .roster-backup { background: #fff3cd; color: #856404; }
+        .roster-second { background: #e2e3e5; color: #383d41; }
+        .roster-dropped { background: #f8d7da; color: #721c24; }
+        .email { color: #667eea; font-size: 12px; }
+        .footer { text-align: center; padding: 15px; color: #6c757d; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👤 老师信息表</h1>
+            <p>基本信息 · 联系方式 · 社交媒体</p>
+        </div>
+        <div class="table-container">
+            <table id="info-table">
+                <thead>
+                    <tr>
+                        <th>老师姓名</th>
+                        <th>邮箱</th>
+                        <th>类型（个人/经纪人）</th>
+                        <th>国家/地区</th>
+                        <th>阵容</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <p>最后更新: <span id="last-updated"></span></p>
+        </div>
+    </div>
+    <script>
+        let teachers = [];
+
+        async function loadData() {
+            try {
+                const response = await fetch('teachers_manual.json');
+                const data = await response.json();
+                teachers = data.teachers || [];
+                teachers.sort((a, b) => {
+                    const rosterOrder = { 'main': 0, 'backup': 1, 'second': 2, 'dropped': 3 };
+                    const rosterA = rosterOrder[a.roster] ?? 99;
+                    const rosterB = rosterOrder[b.roster] ?? 99;
+                    if (rosterA !== rosterB) return rosterA - rosterB;
+                    return a.name.localeCompare(b.name);
+                });
+                renderTable();
+            } catch (error) {
+                console.error('加载失败:', error);
+                document.getElementById('info-table').querySelector('tbody').innerHTML = '<tr><td colspan="5" style="text-align:center; padding: 40px;">加载失败</td></tr>';
+            }
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('info-table').querySelector('tbody');
+            tbody.innerHTML = '';
+
+            teachers.forEach(teacher => {
+                const tr = document.createElement('tr');
+
+                // 姓名
+                const nameTd = document.createElement('td');
+                nameTd.className = 'name-cell';
+                nameTd.textContent = teacher.name;
+                tr.appendChild(nameTd);
+
+                // 邮箱
+                const emailTd = document.createElement('td');
+                emailTd.className = 'email';
+                emailTd.textContent = teacher.email || '-';
+                tr.appendChild(emailTd);
+
+                // 类型
+                const typeTd = document.createElement('td');
+                typeTd.textContent = teacher.contactType || '-';
+                tr.appendChild(typeTd);
+
+                // 国家
+                const countryTd = document.createElement('td');
+                countryTd.textContent = teacher.country || '-';
+                tr.appendChild(countryTd);
+
+                // 阵容
+                const rosterTd = document.createElement('td');
+                const rosterMap = {
+                    'main': { class: 'roster-main', text: '本期主阵容' },
+                    'backup': { class: 'roster-backup', text: 'Backup' },
+                    'second': { class: 'roster-second', text: '第二期' },
+                    'dropped': { class: 'roster-dropped', text: '已放弃' }
+                };
+                const roster = rosterMap[teacher.roster] || { class: 'roster-second', text: '未分类' };
+                rosterTd.innerHTML = `<span class="roster-badge ${roster.class}">${roster.text}</span>`;
+                tr.appendChild(rosterTd);
+
+                tbody.appendChild(tr);
+            });
+
+            document.getElementById('last-updated').textContent = new Date().toLocaleString('zh-CN');
+        }
+
+        loadData();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1370 @@
+[
+  {
+    "id": "19beafac80db4698",
+    "name": "Beaulexx",
+    "representative": "直接联系",
+    "email": "",
+    "roster": "dropped",
+    "status": "signed",
+    "statusText": "🟡 等待对方",
+    "ballSide": "theirs",
+    "lastAction": "",
+    "lastActionDate": "Sat, 14 Mar 2026 04:20:00 +0800",
+    "messageCount": 10,
+    "rate": {
+      "amount": 4000.0,
+      "currency": "USD",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": true,
+        "class": "Economy",
+        "notes": ""
+      },
+      "hotel": {
+        "required": true,
+        "stars": 0,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": null,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-01-23",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Dear BeauLexx, Warm greetings from Shanghai. This is Riceball from Nova, a Shanghai-based creative a"
+      },
+      {
+        "date": "2026-01-23",
+        "side": "mine",
+        "action": "排课",
+        "summary": "test转发会显示出来吗 Dear Jordy Sparidaens Team, Warm greetings from Shanghai. This is Riceball from Nova, a"
+      },
+      {
+        "date": "2026-01-23",
+        "side": "theirs",
+        "action": "排课",
+        "summary": "Hi Riceball, Happy New Year! Thank you so much for reaching out about the Nova Dance Camp in Shangha"
+      },
+      {
+        "date": "2026-01-24",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Subject: Re: Nova Dance Camp – JueXing Project | Teaching Fee Inquiry Dear Beaulexx, Thank you for y"
+      },
+      {
+        "date": "2026-01-26",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hi Riceball, Thank you for all of that information. My rate for 2 masterclasses is $4000USD and $50 "
+      },
+      {
+        "date": "2026-01-27",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Dear Beaulexx, Thank you again for sharing your rate — we really appreciate the clarity. We&#39;ve n"
+      },
+      {
+        "date": "2026-02-01",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Beaulexx, Please let us know if you&#39;re having any thoughts on the previous inquiry. It would "
+      },
+      {
+        "date": "2026-02-06",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Beaulexx, Just wanted to follow up in case my previous note may get buried. We look forward to he"
+      },
+      {
+        "date": "2026-02-09",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Beaulexx, Just wanted to follow up in case my previous note may get buried. We look forward to he"
+      },
+      {
+        "date": "2026-03-14",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Beaulexx, Hope you&#39;re doing well! We&#39;d love to lock you in for the Nova Dance Camp in Sha"
+      }
+    ],
+    "nextAction": "等待对方进一步沟通",
+    "actionNote": ""
+  },
+  {
+    "id": "19beb0c249da44c9",
+    "name": "Jordy",
+    "representative": "Devon Suriya · Capture This AMS",
+    "email": "devon@capturethisams.com",
+    "roster": "second",
+    "status": "signed",
+    "statusText": "🟡 等待对方",
+    "ballSide": "theirs",
+    "lastAction": "",
+    "lastActionDate": "Tue, 10 Mar 2026 22:38:31 +0800",
+    "messageCount": 20,
+    "rate": {
+      "amount": 450.0,
+      "currency": "EUR",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": true,
+        "class": "Economy",
+        "notes": ""
+      },
+      "hotel": {
+        "required": true,
+        "stars": 0,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": true,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-01-23",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Dear Jordy Sparidaens Team, Warm greetings from Shanghai. This is Riceball from Nova, a Shanghai-bas"
+      },
+      {
+        "date": "2026-01-24",
+        "side": "theirs",
+        "action": "排课",
+        "summary": "Hi there, Thanks for your mail and for the lovely request. My name is Devon, I handle his management"
+      },
+      {
+        "date": "2026-01-25",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Devon, Thank you for your reply：） I&#39;m really glad to hear that Jordy is open to this collabor"
+      },
+      {
+        "date": "2026-01-26",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hi there, Thanks for your reply. All sounds good so far. There is a chance that we would have to sta"
+      },
+      {
+        "date": "2026-01-27",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Devon, Thank you for getting back to us, and for sharing the update regarding the possible Istanb"
+      },
+      {
+        "date": "2026-02-03",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hi Riceball, Apologies for the delay! We are potentially interested in Scenario A, but we are wonder"
+      },
+      {
+        "date": "2026-02-03",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Devon, sure we can make it four of course! Whatever at your convenience is fine with us~ On Tue, "
+      },
+      {
+        "date": "2026-02-03",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hi there, thanks for the quick reply. Can you share the time window for this scenario so I can block"
+      },
+      {
+        "date": "2026-02-03",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Devon, the time window for the additional 4 classes is after Aug 20th (or before 17th depending o"
+      },
+      {
+        "date": "2026-02-10",
+        "side": "theirs",
+        "action": "邮件沟通",
+        "summary": "Hi there! Apologies for the delay. We moving to a new office so ive been a bit slower on email. Will"
+      },
+      {
+        "date": "2026-02-11",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hi Jenny! Thanks for the patience. For this total rate we feel comfortable to do 2 masterclasses and"
+      },
+      {
+        "date": "2026-02-13",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Devon, Thank you so much for getting back to us, and no worries about the delay – we completely u"
+      },
+      {
+        "date": "2026-02-16",
+        "side": "theirs",
+        "action": "邮件沟通",
+        "summary": "Hi there, Thanks for your patience. Sounds great, happy we&#39;re aligned on this. We dont have any "
+      },
+      {
+        "date": "2026-02-18",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Devon~ Thank you so much for your interest and proposal for Nova Dance Camp 2026. We&#39;re excit"
+      },
+      {
+        "date": "2026-02-25",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hi there! Hopefully you&#39;ve had amazing Chinese New Year Celebrations! Wishing you the best year "
+      },
+      {
+        "date": "2026-03-05",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Dear Devon, Sorry for the late reply. And thank you for asking and the patience, we had a great holi"
+      },
+      {
+        "date": "2026-03-05",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hi there, I was not aware of this booking, it went around me. But I checked and its right. To be hon"
+      },
+      {
+        "date": "2026-03-06",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hi there, Thanks for the reply. He settled down for 2 classes, a quick in and out setting to be hone"
+      },
+      {
+        "date": "2026-03-07",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Devon, Thank you so much for checking on this and for being so transparent with us — we really ap"
+      },
+      {
+        "date": "2026-03-10",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Devon, This honestly means a lot to us — hearing that Jordy would choose to work with Nova over a"
+      }
+    ],
+    "nextAction": "等待签署合同",
+    "actionNote": ""
+  },
+  {
+    "id": "19beb10fa5235e1b",
+    "name": "Danny Wijngaarden",
+    "representative": "直接联系 · UK",
+    "email": "danieldwijngaarden@gmail.com",
+    "roster": "backup",
+    "status": "signed",
+    "statusText": "🟡 等待对方",
+    "ballSide": "theirs",
+    "lastAction": "",
+    "lastActionDate": "Sat, 14 Mar 2026 22:25:17 +0800",
+    "messageCount": 13,
+    "rate": {
+      "amount": 650.0,
+      "currency": "GBP",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": true,
+        "class": "Economy Plus",
+        "notes": ""
+      },
+      "hotel": {
+        "required": true,
+        "stars": 0,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": null,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-01-23",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Dear Daniel Wijngaarden Team, Warm greetings from Shanghai. This is Riceball from Nova, a Shanghai-b"
+      },
+      {
+        "date": "2026-01-25",
+        "side": "theirs",
+        "action": "排课",
+        "summary": "Hi there, Lovely to hear from you, I am super interested in this opportunity and would love to hear "
+      },
+      {
+        "date": "2026-01-26",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Danny, Thank you for your quick reply：） I&#39;m really glad to hear that you&#39;re open to this "
+      },
+      {
+        "date": "2026-01-30",
+        "side": "theirs",
+        "action": "询问",
+        "summary": "Hi there, Thank you for your fast response, please see my initial terms and conditions below, please"
+      },
+      {
+        "date": "2026-02-01",
+        "side": "mine",
+        "action": "报价",
+        "summary": "Hi Daniel, Thank you for sharing your terms so clearly — we really appreciate the transparency. We&#"
+      },
+      {
+        "date": "2026-02-04",
+        "side": "theirs",
+        "action": "报价",
+        "summary": "Dear Riceball, I hope this email finds you well. It was wonderful to hear from you again. My apologi"
+      },
+      {
+        "date": "2026-02-05",
+        "side": "mine",
+        "action": "报价",
+        "summary": "Dear Daniel, Thank you very much for your detailed breakdown — this helps us a lot in moving the con"
+      },
+      {
+        "date": "2026-02-09",
+        "side": "theirs",
+        "action": "报价",
+        "summary": "Hi Riceball, I&#39;m just CCing in my manager Kiri below to talk through some things and take things"
+      },
+      {
+        "date": "2026-02-09",
+        "side": "mine",
+        "action": "报价",
+        "summary": "Hi Danny, Just wanted to follow up in case my previous note may get buried. We look forward to heari"
+      },
+      {
+        "date": "2026-02-13",
+        "side": "mine",
+        "action": "报价",
+        "summary": "Hi Danny and Kiri~ Thank you so much for your interest and proposal for Nova Dance Camp 2026. We&#39"
+      },
+      {
+        "date": "2026-03-13",
+        "side": "mine",
+        "action": "报价",
+        "summary": "Hi Danny and Kiri, Hope you&#39;re both doing well! We&#39;re back from our Chinese New Year break a"
+      },
+      {
+        "date": "2026-03-13",
+        "side": "theirs",
+        "action": "报价",
+        "summary": "Hi Rice ball, Nice to hear from you, I hope you enjoyed your new year celebrations. I&#39;m not quit"
+      },
+      {
+        "date": "2026-03-14",
+        "side": "mine",
+        "action": "报价",
+        "summary": "Hi Danny and Kiri, Thank you for the quick reply and for being so open about your position — we real"
+      }
+    ],
+    "nextAction": "等待签署合同",
+    "actionNote": ""
+  },
+  {
+    "id": "19beb123689064cf",
+    "name": "Cassie Bartho (GiaNina)",
+    "representative": "直接联系",
+    "email": "contact@cassiebartho.com",
+    "roster": "main",
+    "status": "signed",
+    "statusText": "🟡 等待对方",
+    "ballSide": "theirs",
+    "lastAction": "",
+    "lastActionDate": "Sat, 14 Mar 2026 08:02:00 +0800",
+    "messageCount": 10,
+    "rate": {
+      "amount": 1000.0,
+      "currency": "USD",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": true,
+        "class": "Economy Plus",
+        "notes": ""
+      },
+      "hotel": {
+        "required": true,
+        "stars": 5,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": null,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-01-23",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Dear Cassie Bartho Team, Warm greetings from Shanghai. This is Riceball from Nova, a Shanghai-based "
+      },
+      {
+        "date": "2026-01-23",
+        "side": "theirs",
+        "action": "邮件沟通",
+        "summary": "Hi there! I absolutely would love to chat further about coming to and teaching. This sounds fabulous"
+      },
+      {
+        "date": "2026-01-24",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Dear Cassie, Thank you for your quick reply：） I&#39;m really glad to hear that you&#39;re open to th"
+      },
+      {
+        "date": "2026-01-30",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Cassie, Just in case the last email may not be delivered properly, we want to follow up with the "
+      },
+      {
+        "date": "2026-01-31",
+        "side": "theirs",
+        "action": "邮件沟通",
+        "summary": "Ideally I would do scenario A potentially B. But no matter what I wouldn&#39;t be able to confirm fo"
+      },
+      {
+        "date": "2026-02-01",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Cassie, Thank you so much for getting back to us and for sharing your 2026 rates — we really appr"
+      },
+      {
+        "date": "2026-02-01",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Please see answers in red: Whether agreements are usually signed directly with you or via an agency "
+      },
+      {
+        "date": "2026-02-07",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Cassie, Thank you so much for your thoughtful reply — and apologies for the slight delay on our s"
+      },
+      {
+        "date": "2026-02-13",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Cassie~ Just a heads up that we&#39;re currently in the midst of Chinese New Year celebrations (S"
+      },
+      {
+        "date": "2026-03-14",
+        "side": "mine",
+        "action": "询问",
+        "summary": "Hi Cassie, Great to connect again — hope you&#39;ve been well! We&#39;re back from our Chinese New Y"
+      }
+    ],
+    "nextAction": "等待签署合同",
+    "actionNote": ""
+  },
+  {
+    "id": "19c097adbe3de452",
+    "name": "Robbie (via Steve Gaeto)",
+    "representative": "Bloc Agency · LA",
+    "email": "stevegaeto@blocagency.com",
+    "roster": "main",
+    "status": "signed",
+    "statusText": "🟡 等待对方",
+    "ballSide": "theirs",
+    "lastAction": "",
+    "lastActionDate": "Tue, 17 Mar 2026 08:47:02 +0800",
+    "messageCount": 20,
+    "rate": {
+      "amount": 3500.0,
+      "currency": "USD",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": true,
+        "class": "Business",
+        "notes": ""
+      },
+      "hotel": {
+        "required": true,
+        "stars": 0,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": true,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-01-29",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Dear Robbie Team, Warm greetings from Shanghai. This is Riceball from Nova, a Shanghai-based creativ"
+      },
+      {
+        "date": "2026-01-29",
+        "side": "theirs",
+        "action": "协议",
+        "summary": "Thank you for reaching out. Robbie&#39;s schedule is making teaching opportunities more challenging "
+      },
+      {
+        "date": "2026-02-02",
+        "side": "mine",
+        "action": "协议",
+        "summary": "Dear Steve, Thank you very much for outlining Robbie&#39;s availability and requirements so clearly "
+      },
+      {
+        "date": "2026-02-05",
+        "side": "mine",
+        "action": "协议",
+        "summary": "Hi Steve, Just wanted to briefly follow up in case my previous note may got buried. Robbie is a prio"
+      },
+      {
+        "date": "2026-02-05",
+        "side": "theirs",
+        "action": "协议",
+        "summary": "Thank you. I will circle back once I have a chance to speak with Robbie about it. On Wed, Feb 4, 202"
+      },
+      {
+        "date": "2026-02-06",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Will keep you updated once I have more information regarding Robbie. In the meantime- can you please"
+      },
+      {
+        "date": "2026-02-07",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Steve, Thank you for raising this — and you&#39;re absolutely right. We acknowledge that Robbie&#"
+      },
+      {
+        "date": "2026-02-12",
+        "side": "theirs",
+        "action": "邮件沟通",
+        "summary": "Thank you for your follow up. I&#39;m still needing to get Robbie&#39;s thoughts more fully. He has "
+      },
+      {
+        "date": "2026-02-13",
+        "side": "mine",
+        "action": "邮件沟通",
+        "summary": "Hi Steve, Hope this message finds you well! I wanted to follow up on our previous conversation regar"
+      },
+      {
+        "date": "2026-02-14",
+        "side": "mine",
+        "action": "邮件沟通",
+        "summary": "Hi Steve, Thank you for letting us know – really appreciate the update. We totally understand and we"
+      },
+      {
+        "date": "2026-02-26",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Riceball, Thank you for your patience. We can confirm Robbie for your event if the following terms a"
+      },
+      {
+        "date": "2026-02-28",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Steve, Thank you so much for this – we really appreciate you getting back to us and we&#39;re gen"
+      },
+      {
+        "date": "2026-03-02",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hi Jenny, My comments are below in RED On Mon, Mar 2, 2026 at 4:00 PM NOVA Dance Camp &lt;novadancec"
+      },
+      {
+        "date": "2026-03-03",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Steve, This is Jenny, contracts manager at Nova — Riceball passed this along to me to follow up. "
+      },
+      {
+        "date": "2026-03-05",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "My comments below in RED On Thu, Mar 5, 2026 at 4:02 PM NOVA Dance Camp &lt;novadancecamp@gmail.com&"
+      },
+      {
+        "date": "2026-03-06",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Steve, Thanks for the quick turnaround. On the assistant: Just to confirm our understanding — the"
+      },
+      {
+        "date": "2026-03-14",
+        "side": "mine",
+        "action": "询问",
+        "summary": "Hi Steve, Thanks for waiting. We&#39;ve been in discussion and here&#39;s where we stand: On the ass"
+      },
+      {
+        "date": "2026-03-16",
+        "side": "theirs",
+        "action": "询问",
+        "summary": "Hey Jenny, We understand if this exceeds your budget. We can pass if the terms cant be accommodated "
+      },
+      {
+        "date": "2026-03-17",
+        "side": "mine",
+        "action": "询问",
+        "summary": "Hi Steve, Just wanted to bump this up as we head into the new week. Just let us know your thoughts w"
+      },
+      {
+        "date": "2026-03-17",
+        "side": "mine",
+        "action": "询问",
+        "summary": "Hey Steve, Thanks so much for getting back to me and for letting me know. We really value the opport"
+      }
+    ],
+    "nextAction": "",
+    "actionNote": ""
+  },
+  {
+    "id": "19c190dd67916ac1",
+    "name": "Rowan Chambers",
+    "representative": "直接联系",
+    "email": "chambersrowan@gmail.com",
+    "roster": "main",
+    "status": "signed",
+    "statusText": "🟡 等待对方",
+    "ballSide": "mine",
+    "lastAction": "",
+    "lastActionDate": "Sun, 15 Mar 2026 07:39:52 +0000",
+    "messageCount": 16,
+    "rate": {
+      "amount": 550.0,
+      "currency": "GBP",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": true,
+        "class": "Economy",
+        "notes": ""
+      },
+      "hotel": {
+        "required": true,
+        "stars": 0,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": true,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-02-01",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Dear Rowan, Warm greetings from Shanghai. This is Riceball from Nova, a Shanghai-based creative and "
+      },
+      {
+        "date": "2026-02-01",
+        "side": "theirs",
+        "action": "排课",
+        "summary": "Hey, Thank you for reaching out to me, this sounds great! Here&#39;s my pricing for the following sc"
+      },
+      {
+        "date": "2026-02-02",
+        "side": "mine",
+        "action": "合同",
+        "summary": "Hi Rowan, This is Riceball&#39;s assistant Jenny from Nova. I&#39;ll take it from here. Again, thank"
+      },
+      {
+        "date": "2026-02-02",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hey Jenny, Nice to meet you. Of course no problem! - Agreements will be signed by myself. - Payment "
+      },
+      {
+        "date": "2026-02-02",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Sorry I forgot to mention the Deposit. Once we agree on which scenario (ideally B or C) is it possib"
+      },
+      {
+        "date": "2026-02-07",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Rowan, Thank you so much for your thoughtful reply — and apologies for the slight delay on our si"
+      },
+      {
+        "date": "2026-02-07",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hey Jenny, No problem, don&#39;t worry about it! Thank you for the update, this all sounds great. I "
+      },
+      {
+        "date": "2026-02-13",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Rowan~ Thank you so much for your interest and replay for Nova Dance Camp 2026. We&#39;re excited"
+      },
+      {
+        "date": "2026-02-13",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "He Jenny, No problem! Thanks for letting me know. Have a great holiday break! Speak soon. Rowan On T"
+      },
+      {
+        "date": "2026-03-13",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Rowan, Hope we didn&#39;t make you wait for so long. We&#39;re finally back in full swing after C"
+      },
+      {
+        "date": "2026-03-13",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hey, Thanks so much for getting back to me, I hope you had an amazing new year! The 6 classes at £55"
+      },
+      {
+        "date": "2026-03-13",
+        "side": "mine",
+        "action": "询问",
+        "summary": "Hi Rowan, To answer your question: the 6 classes cover both the camp and the tour combined, so your "
+      },
+      {
+        "date": "2026-03-13",
+        "side": "theirs",
+        "action": "询问",
+        "summary": "Okay thanks for clarifying that :) If you could let me know as soon as it is confirmed with the othe"
+      },
+      {
+        "date": "2026-03-13",
+        "side": "theirs",
+        "action": "询问",
+        "summary": "Hey Jenny, I just wanted to clarity that if it&#39;s not possible to teach more classes, I&#39;d be "
+      },
+      {
+        "date": "2026-03-15",
+        "side": "mine",
+        "action": "询问",
+        "summary": "Hi Rowan, I have spoke with Riceball about your situation — we&#39;ve agreed to guarantee a minimum "
+      },
+      {
+        "date": "2026-03-15",
+        "side": "theirs",
+        "action": "询问",
+        "summary": "Hey Jenny, You guys are amazing! Thank you so much for sorting that out for me, I really appreciate "
+      }
+    ],
+    "nextAction": "等待发送合同",
+    "actionNote": ""
+  },
+  {
+    "id": "19c19107873e4560",
+    "name": "Tina Oleff (MSA Group)",
+    "representative": "McDonald/Selznick Associates",
+    "email": "Tina@msaagency.com",
+    "roster": "main",
+    "status": "signed",
+    "statusText": "🟡 等待对方",
+    "ballSide": "theirs",
+    "lastAction": "",
+    "lastActionDate": "Mon, 16 Mar 2026 23:08:47 +0800",
+    "messageCount": 20,
+    "rate": {
+      "amount": 1200.0,
+      "currency": "USD",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": true,
+        "class": "Business",
+        "notes": ""
+      },
+      "hotel": {
+        "required": true,
+        "stars": 5,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": null,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-02-01",
+        "side": "mine",
+        "action": "邮件沟通",
+        "summary": "Dear Nicole, Warm greetings from Shanghai. This is Riceball from Nova, a Shanghai-based creative and"
+      },
+      {
+        "date": "2026-02-01",
+        "side": "theirs",
+        "action": "邮件沟通",
+        "summary": "Hello, Thanks so much for thinking of us. Looping in Tina from our Education Department to take it f"
+      },
+      {
+        "date": "2026-02-02",
+        "side": "mine",
+        "action": "邮件沟通",
+        "summary": "Thanks Nicole! Can&#39;t wait to talk to Tina. Best, Riceball Partner, Nova Nova Dance Camp On Mon, "
+      },
+      {
+        "date": "2026-02-02",
+        "side": "theirs",
+        "action": "邮件沟通",
+        "summary": "Hello! Thank you so much reaching out! I would love to work together with you on this. I will reach "
+      },
+      {
+        "date": "2026-02-03",
+        "side": "mine",
+        "action": "邮件沟通",
+        "summary": "Hi Tina, Yes, that&#39;s totally correct. Looking forward to hearing from you and we appreciate your"
+      },
+      {
+        "date": "2026-02-03",
+        "side": "theirs",
+        "action": "邮件沟通",
+        "summary": "Hello! I have heard back from Dexter, Klaudia, Kelly both are interested. Paris would not be able to"
+      },
+      {
+        "date": "2026-02-04",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Dear Tina, Thank you so much for getting back to us — we really appreciate the update. We&#39;re ver"
+      },
+      {
+        "date": "2026-02-04",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hi there! I will get back to you, Alyssa is also interested! I will work to get you everyones rates "
+      },
+      {
+        "date": "2026-02-06",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hello! I am posting below rates for Kim and Klaudia. Every teacher has different rates. I will get y"
+      },
+      {
+        "date": "2026-02-10",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hello! I hope all is well, Alyssa would love to come! If you do end up booking her we would ask that"
+      },
+      {
+        "date": "2026-02-13",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Tina~ Thank you so much for the update. We look forward to hearing more information about Kelly a"
+      },
+      {
+        "date": "2026-02-19",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hello! Happy New Year! I have not heard back from Dexter but I did hear from Kelly! See below: Scena"
+      },
+      {
+        "date": "2026-02-24",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hello! I am checking back in here to see if you&#39;d like to book any of these teachers we are rece"
+      },
+      {
+        "date": "2026-03-03",
+        "side": "theirs",
+        "action": "确认",
+        "summary": "Hi there! So great to hear from you! I haven&#39;t heard back from Dexter regarding his rates yet, b"
+      },
+      {
+        "date": "2026-03-04",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Tina, Sorry for the late reply — we were on Spring Festival holiday and are now fully back in the"
+      },
+      {
+        "date": "2026-03-13",
+        "side": "theirs",
+        "action": "报价",
+        "summary": "Hi Jenny! Nice to e-meet you. Noted on the rates I will reach out to them and get back to you. Can y"
+      },
+      {
+        "date": "2026-03-14",
+        "side": "mine",
+        "action": "报价",
+        "summary": "Hi Tina, Sorry for the delay and thank you for the clarification on Kelly&#39;s rates — all noted! A"
+      },
+      {
+        "date": "2026-03-14",
+        "side": "mine",
+        "action": "报价",
+        "summary": "Hi Tina, Sure once their rates have been confirmed, we will proceed with confirming travel arrangeme"
+      },
+      {
+        "date": "2026-03-16",
+        "side": "theirs",
+        "action": "报价",
+        "summary": "Hello! Just quick question with these new rates, we need to know the exact amount of classes they wo"
+      },
+      {
+        "date": "2026-03-16",
+        "side": "mine",
+        "action": "报价",
+        "summary": "Hi Tina, Thanks for your message and for looking at the new rates. Based on our current plan, we are"
+      }
+    ],
+    "nextAction": "等待发送合同",
+    "actionNote": ""
+  },
+  {
+    "id": "19c1934518d033e6",
+    "name": "Pedro Reis",
+    "representative": "Talitha Gonçalves · Pedro Reis Training",
+    "email": "pedroreistraining@gmail.com",
+    "roster": "backup",
+    "status": "signed",
+    "statusText": "🟡 等待对方",
+    "ballSide": "theirs",
+    "lastAction": "",
+    "lastActionDate": "Mon, 16 Mar 2026 12:15:58 +0800",
+    "messageCount": 12,
+    "rate": {
+      "amount": 1200.0,
+      "currency": "USD",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": true,
+        "class": "Economy",
+        "notes": ""
+      },
+      "hotel": {
+        "required": true,
+        "stars": 0,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": null,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-02-01",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Dear Pedro, Warm greetings from Shanghai. This is Riceball from Nova, a Shanghai-based creative and "
+      },
+      {
+        "date": "2026-02-02",
+        "side": "theirs",
+        "action": "询问",
+        "summary": "Hey! My name is Talitha and I respond as Pedro&#39;s manager. We deeply appreciate your invitation! "
+      },
+      {
+        "date": "2026-02-03",
+        "side": "mine",
+        "action": "接受",
+        "summary": "Hi Talitha, Thank you very much for getting back to us and for sharing Pedro&#39;s materials — we re"
+      },
+      {
+        "date": "2026-02-09",
+        "side": "mine",
+        "action": "接受",
+        "summary": "Hi Pedro, Just wanted to follow up in case my previous note may get buried. We look forward to heari"
+      },
+      {
+        "date": "2026-02-10",
+        "side": "theirs",
+        "action": "接受",
+        "summary": "Hi Riceball, I&#39;ve been reviewing Pedro&#39;s schedule for this period, and it turns out he will "
+      },
+      {
+        "date": "2026-02-13",
+        "side": "mine",
+        "action": "接受",
+        "summary": "Hi Talitha, Thank you so much for your interest and proposal for Nova Dance Camp 2026. We understand"
+      },
+      {
+        "date": "2026-02-16",
+        "side": "theirs",
+        "action": "接受",
+        "summary": "Hi Riceball! Thank you for letting me know! Wish you an amazing New Year celebrations! Looking forwa"
+      },
+      {
+        "date": "2026-03-04",
+        "side": "theirs",
+        "action": "接受",
+        "summary": "Hi Riceball, I hope you&#39;re well! I just wanted to check if there are any updates regarding Pedro"
+      },
+      {
+        "date": "2026-03-06",
+        "side": "mine",
+        "action": "接受",
+        "summary": "Hi Talitha, Sorry for the late reply. We&#39;re now back in full swing and ready to continue our con"
+      },
+      {
+        "date": "2026-03-14",
+        "side": "mine",
+        "action": "接受",
+        "summary": "Hi Talitha, Just wanted to follow up in case my previous note may get buried. We look forward to hea"
+      },
+      {
+        "date": "2026-03-15",
+        "side": "theirs",
+        "action": "接受",
+        "summary": "Hi Riceball! I apologize for taking longer to reply. Pedro is teaching abroad right now, and communi"
+      },
+      {
+        "date": "2026-03-16",
+        "side": "mine",
+        "action": "接受",
+        "summary": "Hi Talitha, No worries, thanks for the update! We&#39;d appreciate it if we can settle things down t"
+      }
+    ],
+    "nextAction": "需要回复问题",
+    "actionNote": "对方有疑问需要解答"
+  },
+  {
+    "id": "19c1ddb372be25a4",
+    "name": "Cassie Bartho (GiaNina)",
+    "representative": "直接联系",
+    "email": "contact@cassiebartho.com",
+    "roster": "main",
+    "status": "signed",
+    "statusText": "⚪ 已放弃",
+    "ballSide": "theirs",
+    "lastAction": "",
+    "lastActionDate": "Tue, 24 Feb 2026 21:07:07 +0000",
+    "messageCount": 3,
+    "rate": {
+      "amount": 0,
+      "currency": "USD",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": false,
+        "class": "Economy",
+        "notes": ""
+      },
+      "hotel": {
+        "required": true,
+        "stars": 0,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": null,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-02-02",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Dear GiaNina, Warm greetings from Shanghai. This is Riceball from Nova, a Shanghai-based creative an"
+      },
+      {
+        "date": "2026-02-05",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Hi GiaNina, Please check this out and let me know if you&#39;re interested. ---------- Forwarded mes"
+      },
+      {
+        "date": "2026-02-24",
+        "side": "theirs",
+        "action": "排课",
+        "summary": "Thank you so much for reaching out to GiaNina about this opportunity although GiaNina is not availab"
+      }
+    ],
+    "nextAction": "",
+    "actionNote": ""
+  },
+  {
+    "id": "19c28b0ce84fb0be",
+    "name": "Preslee",
+    "representative": "Annie Margolis · Clear Talent Group",
+    "email": "annie@cleartalentgroup.com",
+    "roster": "backup",
+    "status": "signed",
+    "statusText": "🟡 等待对方",
+    "ballSide": "mine",
+    "lastAction": "",
+    "lastActionDate": "Sat, 14 Mar 2026 11:26:57 +0800",
+    "messageCount": 4,
+    "rate": {
+      "amount": 0,
+      "currency": "USD",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": false,
+        "class": "Economy",
+        "notes": ""
+      },
+      "hotel": {
+        "required": true,
+        "stars": 0,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": null,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-02-04",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Hello CTG team, Warm greetings from Shanghai. This is Riceball from Nova, a Shanghai-based creative "
+      },
+      {
+        "date": "2026-03-13",
+        "side": "theirs",
+        "action": "排课",
+        "summary": "Hi Riceball, Thanks for reaching out! We&#39;d love to get some more information from you. Do you ha"
+      },
+      {
+        "date": "2026-03-14",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Hi Meisha, My name is Riceball, Partner at Nova Dance Camp in Shanghai. I reached out to the CTG gen"
+      },
+      {
+        "date": "2026-03-14",
+        "side": "mine",
+        "action": "排课",
+        "summary": "Hi Annie, Nice to hear from you! We&#39;d like to have a better understanding regarding Preslee&#39;"
+      }
+    ],
+    "nextAction": "等待对方进一步沟通",
+    "actionNote": ""
+  },
+  {
+    "id": "19c3510f3242e99b",
+    "name": "Robbie (via Steve Gaeto)",
+    "representative": "Bloc Agency · LA",
+    "email": "stevegaeto@blocagency.com",
+    "roster": "main",
+    "status": "waiting",
+    "statusText": "⚪ 已放弃",
+    "ballSide": "mine",
+    "lastAction": "",
+    "lastActionDate": "Fri, 13 Feb 2026 06:00:00 +0800",
+    "messageCount": 2,
+    "rate": {
+      "amount": 0,
+      "currency": "USD",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": false,
+        "class": "Economy",
+        "notes": ""
+      },
+      "hotel": {
+        "required": false,
+        "stars": 0,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": null,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-02-06",
+        "side": "theirs",
+        "action": "邮件沟通",
+        "summary": "Hi Riceball, I hope you&#39;re well, and thank you for reaching out to Bloc LA in regards to booking"
+      },
+      {
+        "date": "2026-02-13",
+        "side": "mine",
+        "action": "邮件沟通",
+        "summary": "Hi Anais, Thank you so much for your reply. We&#39;re excited about the possibility of working with "
+      }
+    ],
+    "nextAction": "等待对方进一步沟通",
+    "actionNote": ""
+  },
+  {
+    "id": "19c47b55d23a5d94",
+    "name": "Sienna",
+    "representative": "Carrie",
+    "email": "",
+    "roster": "backup",
+    "status": "signed",
+    "statusText": "🟡 等待对方",
+    "ballSide": "theirs",
+    "lastAction": "",
+    "lastActionDate": "Sat, 14 Mar 2026 06:00:00 +0800",
+    "messageCount": 4,
+    "rate": {
+      "amount": 0,
+      "currency": "USD",
+      "minClasses": 0,
+      "confirmedClasses": 0
+    },
+    "expenses": {
+      "flights": {
+        "required": false,
+        "class": "Economy",
+        "notes": ""
+      },
+      "hotel": {
+        "required": false,
+        "stars": 0,
+        "nights": 0,
+        "notes": ""
+      },
+      "perDiem": {
+        "amount": 0,
+        "currency": "USD",
+        "days": 0
+      }
+    },
+    "specialRequirements": [],
+    "shooting": {
+      "allowed": null,
+      "restrictions": [],
+      "notes": ""
+    },
+    "timeline": [
+      {
+        "date": "2026-02-11",
+        "side": "mine",
+        "action": "邮件沟通",
+        "summary": "Dear Sienna, Warm greetings from Shanghai. This is Riceball from Nova. I&#39;m writing to you regard"
+      },
+      {
+        "date": "2026-02-17",
+        "side": "theirs",
+        "action": "排课",
+        "summary": "Hi Riceball, So appreciate your email. Are you able to let me know the latest date we could let you "
+      },
+      {
+        "date": "2026-02-19",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Carrie, Thank you so much for getting back to us! We&#39;re planning to start our promotional cam"
+      },
+      {
+        "date": "2026-03-14",
+        "side": "mine",
+        "action": "确认",
+        "summary": "Hi Carrie, Hope you&#39;re doing well! We&#39;re back from our Chinese New Year break and wanted to "
+      }
+    ],
+    "nextAction": "等待对方进一步沟通",
+    "actionNote": ""
+  }
+]

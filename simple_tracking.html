@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邮件跟踪</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            margin: 10px;
+            background: #fff;
+        }
+        h1 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 6px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #f2f2f2;
+            font-weight: bold;
+        }
+        .highlight { background: #fff9c4; }
+        .name { font-weight: bold; }
+        .small { font-size: 10px; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>邮件跟踪</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>老师</th>
+                <th>邮箱</th>
+                <th>类型</th>
+                <th>阵容</th>
+                <th>状态</th>
+                <th>皮球</th>
+                <th>邮件</th>
+                <th>最后邮件</th>
+                <th>最后行动</th>
+                <th>价格</th>
+                <th>沟通要点</th>
+                <th>下一步</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight">
+                <td class="name">Rowan Chambers</td>
+                <td>chambersrowan@gmail.com</td>
+                <td>个人</td>
+                <td>main</td>
+                <td>合同待发</td>
+                <td>己方</td>
+                <td>0</td>
+                <td></td>
+                <td>Rowan 回复 'you guys are amazing!'<br><span class="small">2026-03-15</span></td>
+                <td>£550/class</td>
+                <td>双方已口头完全达成一致<br>Rowan 主动提出愿意接受 6 场保底<br>Jenny 上周日承诺「本周早些发合同」<br>Rowan 已非常期待，回复 'you guys are amazing'<br>唯一待做的事：发合同</td>
+                <td><b>今天发合同</b><br><span class="small">覆盖 2 场 Shanghai camp，注明 6 场保底条款，tour 场次另行 addendum</span></td>
+            </tr>
+            <tr class="highlight">
+                <td class="name">Robbie Blue</td>
+                <td>stevegaeto@blocagency.com</td>
+                <td>Agency Bloc</td>
+                <td>main</td>
+                <td>待签合同</td>
+                <td>己方</td>
+                <td>20</td>
+                <td>Tue, 17 Mar 2026 08:47</td>
+                <td>Jenny 回复接受条款<br><span class="small">2026-03-17</span></td>
+                <td>已接受条款</td>
+                <td>今早 Steve 回复接受了条款<br>同意助理费 + out clause<br>等待发正式合同</td>
+                <td><b>今天发合同</b><br><span class="small">覆盖 Steve 确认的条款：助理费 + out clause</span></td>
+            </tr>
+            <tr class="highlight">
+                <td class="name">Tina Oleff (MSA Group)</td>
+                <td>Tina@msaagency.com</td>
+                <td>Agency MSA</td>
+                <td>main</td>
+                <td>谈价中</td>
+                <td>对方</td>
+                <td>20</td>
+                <td>Fri, 13 Mar 2026</td>
+                <td>发 4-6 场 package 方案<br><span class="small">2026-03-16</span></td>
+                <td>待确认</td>
+                <td>昨夜发了 4-6 场 package 方案<br>等待 MSA 回复</td>
+                <td><b>等待回复</b><br><span class="small">跟进 4-6 场方案</span></td>
+            </tr>
+            <tr>
+                <td class="name">Daniel Wijngaarden</td>
+                <td>danieldwijngaarden@gmail.com</td>
+                <td>个人（大概率有 Agency）</td>
+                <td>backup</td>
+                <td>谈价中</td>
+                <td>对方</td>
+                <td>13</td>
+                <td>Sun, 1 Feb 2026</td>
+                <td>Nova 提出 £650/class<br><span class="small">2026-03-14</span></td>
+                <td>£650/class（我方还价）</td>
+                <td>Danny 自己提价到 £850/class<br>你们还价 £650/class<br>等待 Danny 回复</td>
+                <td><b>等待回复</b><br><span class="small">如果 Danny 接受 £650，可以作为 Backup</span></td>
+            </tr>
+            <tr>
+                <td class="name">Pedro Reis</td>
+                <td>pedroreistraining@gmail.com</td>
+                <td>Agency</td>
+                <td>backup</td>
+                <td>等待对方回复</td>
+                <td>对方</td>
+                <td>0</td>
+                <td></td>
+                <td>回复「希望本周内定下来」<br><span class="small">2026-03-16</span></td>
+                <td>待确认</td>
+                <td>Pedro 目前在国外教学，沟通较慢<br>Talitha 代为沟通<br>Nova 希望本周内确认是否合作</td>
+                <td><b>等待 Pedro/Talitha 回复</b><br><span class="small">本周内无回复则跟进，否则视为放弃</span></td>
+            </tr>
+            <tr class="highlight">
+                <td class="name">Cassie Bartho</td>
+                <td>contact@cassiebartho.com</td>
+                <td>Agency</td>
+                <td>main</td>
+                <td>条款确认中</td>
+                <td>对方</td>
+                <td>0</td>
+                <td></td>
+                <td>确认 $1000/class + $70/day<br><span class="small">2026-03-14</span></td>
+                <td>$1000/class</td>
+                <td>费率已确认：$1000/class + $70/day per diem<br>机酒：覆盖国际机票 + 5 星酒店<br>Nova 建议增加 out clause（提前 2 个月）<br>等待 GiaNina 确认是否接受 out clause</td>
+                <td><b>等待 GiaNina 回复 out clause</b><br><span class="small">确认后立刻准备合同</span></td>
+            </tr>
+            <tr>
+                <td class="name">BeauLexx</td>
+                <td>me@beaulexx.com</td>
+                <td>个人</td>
+                <td>dropped</td>
+                <td>已放弃</td>
+                <td>对方</td>
+                <td>0</td>
+                <td></td>
+                <td>问是否 camp 先不谈 tour<br><span class="small">2026-03-14</span></td>
+                <td>$4000/2场</td>
+                <td>初始报价 $4000/2 场 + $50/day<br>Nova 多次 follow-up 无回复<br>3月14日再跟进，仍无回复<br>视为放弃，不再跟进</td>
+                <td><b>None</b><br><span class="small">已放弃，不再主动跟进</span></td>
+            </tr>
+            <tr>
+                <td class="name">Jordy Sparidaens</td>
+                <td>devon@capturethisams.com</td>
+                <td>Agency Devon</td>
+                <td>second</td>
+                <td>婉拒</td>
+                <td>己方</td>
+                <td>20</td>
+                <td>Thu, 5 Mar 2026</td>
+                <td>婉拒（阵容已满）<br><span class="small">2026-03-10</span></td>
+                <td>未达成一致</td>
+                <td>Devon 拒绝了我们的最后报价<br>你们决定用当前阵容，不再追求 Jordy</td>
+                <td><b>已关闭</b><br><span class="small">Devon 回复说价格太低，你们决定放弃</span></td>
+            </tr>
+            <tr>
+                <td class="name">Yasmina (Jena)</td>
+                <td></td>
+                <td></td>
+                <td>second</td>
+                <td>已婉拒</td>
+                <td>对方</td>
+                <td>0</td>
+                <td></td>
+                <td>婉拒（阵容已满）<br><span class="small">2026-02-01</span></td>
+                <td>待确认</td>
+                <td>Yasmina 详细说明了 Jena 的工作条件<br>Nova 欣赏透明沟通，但对本届阵容已满<br>表达对未来合作开放的态度</td>
+                <td><b>None</b><br><span class="small">本届不用，未来可能合作</span></td>
+            </tr>
+            <tr>
+                <td class="name">Sveta</td>
+                <td></td>
+                <td></td>
+                <td>second</td>
+                <td>已婉拒</td>
+                <td>对方</td>
+                <td>0</td>
+                <td></td>
+                <td>婉拒（阵容已满）<br><span class="small">2026-02-12</span></td>
+                <td>待确认</td>
+                <td>Sveta 提供了详细工作条件方案<br>Nova 经慎重考虑，决定 finalize 当前阵容<br>感谢 Sveta 的持续兴趣</td>
+                <td><b>None</b><br><span class="small">本届不用，未来可能合作</span></td>
+            </tr>
+            <tr>
+                <td class="name">Colette</td>
+                <td></td>
+                <td></td>
+                <td>second</td>
+                <td>已婉拒</td>
+                <td>对方</td>
+                <td>0</td>
+                <td></td>
+                <td>婉拒（春节放假中）<br><span class="small">2026-02-12</span></td>
+                <td>待确认</td>
+                <td>Colette 表达了兴趣<br>Nova 正值春节假期（2/13 - 2/28）<br>告知假期结束后再继续沟通<br>后续 Nova 阵容已满，未再跟进</td>
+                <td><b>None</b><br><span class="small">本届不用，未来可能合作</span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

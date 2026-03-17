@@ -1,0 +1,410 @@
+====================================================================================================
+邮件线程分析结果：
+====================================================================================================
+
+Thread: 19be9497d26d048c
+  邮件数: 1
+  主题: Your Account is Live: Finish Setting Up Your Business on Google
+  邮箱: googlecommunityteam-noreply@google.com
+  最后邮件: Thu, 22 Jan 2026 21:17:45 -0800 | Google Community Team <googlecommunityteam-noreply
+
+Thread: 19be94a5a5654229
+  邮件数: 1
+  主题: 请在 iPhone 上完成新 Google 账号设置
+  邮箱: no-reply@google.com
+  最后邮件: Thu, 22 Jan 2026 21:18:42 -0800 | Google <no-reply@google.com>
+
+Thread: 19be94fdb616a5fc
+  邮件数: 3
+  主题: 安全提醒
+  邮箱: no-reply@accounts.google.com
+  最后邮件: Fri, 23 Jan 2026 05:24:39 GMT | Google <no-reply@accounts.google.com>
+
+Thread: 19be978133f3363f
+  邮件数: 1
+  主题: 您的 Google 账号已成功恢复
+  邮箱: no-reply@accounts.google.com
+  最后邮件: Fri, 23 Jan 2026 06:08:38 GMT | Google <no-reply@accounts.google.com>
+
+Thread: 19beafa7c827b8ad
+  邮件数: 1
+  主题: 
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Fri, 23 Jan 2026 21:10:42 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19beafac80db4698
+  邮件数: 10
+  主题: Re: Invitation to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: novadancecamp@gmail.com, me@beaulexx.com
+  最后邮件: Fri, 23 Jan 2026 12:27:31 -0800 | "Beaulexx ." <me@beaulexx.com>
+
+Thread: 19beb0bda08e640d
+  邮件数: 1
+  主题: 
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Fri, 23 Jan 2026 21:29:42 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19beb0c249da44c9
+  邮件数: 20
+  主题: Re: Invitation to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: devon@capturethisams.com, novadancecamp@gmail.com
+  最后邮件: Thu, 5 Mar 2026 14:58:10 +0100 | Devon Suriya <devon@capturethisams.com>
+
+Thread: 19beb0ddc06ac76f
+  邮件数: 1
+  主题: Invitation to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Fri, 23 Jan 2026 21:32:51 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19beb0f04ea90b03
+  邮件数: 1
+  主题: Invitation to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Fri, 23 Jan 2026 21:33:43 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19beb0fd39534485
+  邮件数: 1
+  主题: Invitation to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Fri, 23 Jan 2026 21:34:57 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19beb10fa5235e1b
+  邮件数: 13
+  主题: Re: Invitation to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: danieldwijngaarden@gmail.com, novadancecamp@gmail.com
+  最后邮件: Sun, 1 Feb 2026 13:39:40 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+  价格: 650
+
+Thread: 19beb123689064cf
+  邮件数: 10
+  主题: Re: Invitation to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: contact@cassiebartho.com, novadancecamp@gmail.com
+  最后邮件: Sat, 24 Jan 2026 15:52:37 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19beb1c0966f789b
+  邮件数: 1
+  主题: Invitation to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Fri, 23 Jan 2026 21:47:53 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19beb46e9db024fe
+  邮件数: 1
+  主题: Invitation to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Fri, 23 Jan 2026 22:36:39 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19beefdfb8ce8039
+  邮件数: 1
+  主题: Invitation to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Sat, 24 Jan 2026 15:57:36 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c03b36ce4f89a3
+  邮件数: 2
+  主题: Re: ⭐️INVITATION to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: kimberleysmit0@gmail.com, novadancecamp@gmail.com
+  最后邮件: Wed, 28 Jan 2026 16:26:46 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c03b7eff87e905
+  邮件数: 5
+  主题: Re: ⭐️INVITATION to Join Nova Dance Camp – JueXing Project (Shanghai, Aug 2026)
+  邮箱: bookingjenadivol@gmail.com, novadancecamp@gmail.com
+  最后邮件: Fri, 30 Jan 2026 20:02:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c0974411520b81
+  邮件数: 1
+  主题: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai, Ch
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Thu, 5 Feb 2026 13:18:12 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c09745b65eae68
+  邮件数: 1
+  主题: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai, Ch
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Thu, 29 Jan 2026 19:15:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c097735735b68c
+  邮件数: 1
+  主题: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai, Ch
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Thu, 29 Jan 2026 19:16:21 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c097adbe3de452
+  邮件数: 20
+  主题: Re: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai
+  邮箱: stevegaeto@blocagency.com, novadancecamp@gmail.com
+  最后邮件: Sat, 28 Feb 2026 08:00:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c097d764b7820a
+  邮件数: 2
+  主题: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai, Ch
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Fri, 13 Mar 2026 18:47:43 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c097e7ef7355d7
+  邮件数: 3
+  主题: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai, Ch
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Thu, 5 Feb 2026 12:56:50 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c09815b5f1e9e9
+  邮件数: 1
+  主题: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai, Ch
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Thu, 29 Jan 2026 19:27:03 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c12f913000387d
+  邮件数: 1
+  主题: 
+商家提示：在 Google 搜索和 Google 地图上展示您的商家信息
+
+  邮箱: googlecommunityteam-noreply@google.com
+  最后邮件: Fri, 30 Jan 2026 23:33:58 -0800 | Google Community Team <googlecommunityteam-noreply
+
+Thread: 19c1908dc17b67bc
+  邮件数: 5
+  主题: Re: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai
+  邮箱: sakalcooperation@gmail.com, novadancecamp@gmail.com
+  最后邮件: Thu, 12 Feb 2026 19:00:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c190b3aa03d1d9
+  邮件数: 5
+  主题: Re: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai
+  邮箱: colet_e@hotmail.com, novadancecamp@gmail.com
+  最后邮件: Sun, 8 Feb 2026 13:23:25 +0000 | Colette Kaiwai <colet_e@hotmail.com>
+
+Thread: 19c190c90fb70563
+  邮件数: 1
+  主题: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai, Ch
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Sun, 1 Feb 2026 19:53:50 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c190dd67916ac1
+  邮件数: 16
+  主题: Re: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai
+  邮箱: chambersrowan@gmail.com, novadancecamp@gmail.com
+  最后邮件: Mon, 2 Feb 2026 11:05:36 +0000 | Rowan Chambers <chambersrowan@gmail.com>
+  价格: 550, 550, 550, 550, 550
+
+Thread: 19c190ef4cfd7393
+  邮件数: 2
+  主题: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai, Ch
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Thu, 5 Feb 2026 13:28:29 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c19107873e4560
+  邮件数: 20
+  主题: Re: ⭐️Booking Inquiry for 7 Dancers| Core Instructor Position – Nova Dance Camp,
+  邮箱: novadancecamp@gmail.com, tina@msaagency.com, nicole@msaagency.com
+  最后邮件: Fri, 13 Mar 2026 16:47:01 +0000 | Tina Oleff <Tina@msaagency.com>
+
+Thread: 19c1927bc549aa4b
+  邮件数: 1
+  主题: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai, Ch
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Sun, 1 Feb 2026 20:23:25 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c192940567bf76
+  邮件数: 1
+  主题: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai, Ch
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Sun, 1 Feb 2026 20:24:57 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c192b3e3557bbe
+  邮件数: 1
+  主题: ⭐️Booking Inquiry for DENZEL | Core Instructor Position – Nova Dance Camp, Shang
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Sun, 1 Feb 2026 20:29:37 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c1934518d033e6
+  邮件数: 12
+  主题: Re: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai
+  邮箱: pedroreistraining@gmail.com, novadancecamp@gmail.com
+  最后邮件: Sat, 14 Mar 2026 08:02:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c1ddb372be25a4
+  邮件数: 3
+  主题: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai, Ch
+  邮箱: novadancecamp@gmail.com, info@gianinainc.com
+  最后邮件: Thu, 5 Feb 2026 13:29:57 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c26c43cd7633ca
+  邮件数: 1
+  主题: 安全提醒
+  邮箱: no-reply@accounts.google.com
+  最后邮件: Wed, 04 Feb 2026 03:48:39 GMT | Google <no-reply@accounts.google.com>
+
+Thread: 19c26c4e2bcf19ec
+  邮件数: 1
+  主题: NOVA，请查看您的 Google 帐号设置
+  邮箱: no-reply@google.com
+  最后邮件: Tue, 03 Feb 2026 19:49:23 -0800 | Google <no-reply@google.com>
+
+Thread: 19c28abb20f9f5eb
+  邮件数: 4
+  主题: Fwd: Undeliverable: ⭐️Booking Inquiry for Selene | Core Instructor Position – No
+  邮箱: novadancecamp@gmail.com, postmaster@cleartalentgroup.com
+  最后邮件: Wed, 4 Feb 2026 12:46:59 +0000 | <postmaster@cleartalentgroup.com>
+
+Thread: 19c28b0ce84fb0be
+  邮件数: 4
+  主题: RE: ⭐️Booking Inquiry for Preslee | Core Instructor Position – Nova Dance Camp, 
+  邮箱: annie@cleartalentgroup.com, novadancecamp@gmail.com
+  最后邮件: Sat, 14 Mar 2026 00:00:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c2cabd7ee02c91
+  邮件数: 1
+  主题: 111
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Thu, 5 Feb 2026 15:19:57 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c2e2761e0dbcfb
+  邮件数: 1
+  主题: ⭐️【给小义的草稿】Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shan
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Wed, 11 Feb 2026 11:06:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c30e4694fe90f1
+  邮件数: 1
+  主题: ⭐️Booking Inquiry for 2 Artists | Core Instructor Position – Nova Dance Camp, Sh
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Sat, 7 Feb 2026 01:08:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c3510f3242e99b
+  邮件数: 2
+  主题: RE: Booking Inquiry for DENZEL | Core Instructor Position – Nova Dance Camp, Sha
+  邮箱: anais@blocagency.com, novadancecamp@gmail.com
+  最后邮件: Fri, 13 Feb 2026 06:00:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c443499f096908
+  邮件数: 2
+  主题: Re: Selene Irehi
+  邮箱: novadancecamp@gmail.com, cheyenne@legacyentgroup.com
+  最后邮件: Mon, 9 Feb 2026 12:59:45 -0800 | Cheyenne Kibblewhite <cheyenne@legacyentgroup.com>
+
+Thread: 19c47b55d23a5d94
+  邮件数: 4
+  主题: Re: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai
+  邮箱: novadancecamp@gmail.com, carrie@labstudiosinc.com
+  最后邮件: Wed, 11 Feb 2026 08:00:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c484bc7db6cbb5
+  邮件数: 3
+  主题: 
+  邮箱: novadancecamp@gmail.com, danica_m@live.com.au
+  最后邮件: Fri, 13 Feb 2026 11:53:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c484d2d8cf0e84
+  邮件数: 1
+  主题: 
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Wed, 11 Feb 2026 11:06:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c484fc192b889b
+  邮件数: 1
+  主题: 
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Wed, 11 Feb 2026 21:12:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c4fede3f934dad
+  邮件数: 2
+  主题: Re: Teaching Invitation
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Thu, 12 Feb 2026 11:39:13 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c4fef3bcd1db85
+  邮件数: 2
+  主题: Re: ⭐️Teaching Invitation | Core Instructor Position – Nova Dance Camp, Shanghai
+  邮箱: novadancecamp@gmail.com
+  最后邮件: Thu, 12 Feb 2026 21:00:00 +0800 | NOVA Dance Camp <novadancecamp@gmail.com>
+
+Thread: 19c7a4e2e6dbdc00
+  邮件数: 1
+  主题: 912738 is your Instagram code
+  邮箱: no-reply@mail.instagram.com
+  最后邮件: Fri, 20 Feb 2026 01:07:43 -0800 | Instagram <no-reply@mail.instagram.com>
+
+Thread: 19c7a54278ee035d
+  邮件数: 3
+  主题: New login to Instagram from Instagram on Apple iPhone
+  邮箱: security@mail.instagram.com
+  最后邮件: Fri, 20 Feb 2026 19:47:52 -0800 | Instagram <security@mail.instagram.com>
+
+Thread: 19c7a60973b71938
+  邮件数: 4
+  主题: Verify your account
+  邮箱: security@mail.instagram.com
+  最后邮件: Fri, 20 Feb 2026 01:27:52 -0800 | Instagram <security@mail.instagram.com>
+
+Thread: 19c7a60f9b305ec6
+  邮件数: 1
+  主题: New login to Instagram from Safari on Mac OS X
+  邮箱: security@mail.instagram.com
+  最后邮件: Fri, 20 Feb 2026 01:28:16 -0800 | Instagram <security@mail.instagram.com>
+
+Thread: 19c7c82284cf2da3
+  邮件数: 1
+  主题: 221374 是你的 X 验证码
+  邮箱: info@x.com
+  最后邮件: Fri, 20 Feb 2026 19:23:49 +0000 | X <info@x.com>
+
+Thread: 19c81c9b5109570b
+  邮件数: 1
+  主题: Welcome to TikTok
+  邮箱: no-reply@service.tiktok.com
+  最后邮件: Sat, 21 Feb 2026 20:00:04 +0000 | TikTok <no-reply@service.tiktok.com>
+
+Thread: 19c917b8765aa3ab
+  邮件数: 1
+  主题: How business chats work on Instagram Direct
+  邮箱: business-noreply@mail.instagram.com
+  最后邮件: Tue, 24 Feb 2026 13:08:31 -0800 | Instagram Business <business-noreply@mail.instagra
+
+Thread: 19c9a16db2fa2558
+  邮件数: 1
+  主题: 非常感谢！您的首次贡献已显现影响力
+  邮箱: google-maps-noreply@google.com
+  最后邮件: Thu, 26 Feb 2026 05:15:14 -0800 | "Google 地图" <google-maps-noreply@google.com>
+
+Thread: 19ca78ad49aea670
+  邮件数: 1
+  主题: 您的账号启用了两步验证功能
+  邮箱: no-reply@accounts.google.com
+  最后邮件: Sun, 01 Mar 2026 03:56:58 GMT | Google <no-reply@accounts.google.com>
+
+Thread: 19ca78c2ca7422e2
+  邮件数: 1
+  主题: 安全提醒
+  邮箱: no-reply@accounts.google.com
+  最后邮件: Sun, 01 Mar 2026 03:58:27 GMT | Google <no-reply@accounts.google.com>
+
+Thread: 19cc127f7b564c4c
+  邮件数: 1
+  主题: 感谢您最近贡献的内容
+  邮箱: google-maps-noreply@google.com
+  最后邮件: Thu, 05 Mar 2026 19:19:07 -0800 | "Google 地图" <google-maps-noreply@google.com>
+
+Thread: 19cd22bfde81b35a
+  邮件数: 1
+  主题: 您的新 Google Play 隐私设置
+  邮箱: googleplay-noreply@google.com
+  最后邮件: Mon, 09 Mar 2026 03:37:03 -0700 | Google Play <googleplay-noreply@google.com>
+
+Thread: 19cd6cb1ee14da03
+  邮件数: 1
+  主题: nova_dancecamp，在动态中查看 charli_xcx 、 lysp_ 和更多账户
+  邮箱: follow-suggestions@mail.instagram.com
+  最后邮件: Tue, 10 Mar 2026 01:09:14 -0700 | Instagram <follow-suggestions@mail.instagram.com>
+
+Thread: 19ceb01f6bd095df
+  邮件数: 1
+  主题: 您的 Google 账号已成功恢复
+  邮箱: no-reply@accounts.google.com
+  最后邮件: Sat, 14 Mar 2026 06:21:39 GMT | Google <no-reply@accounts.google.com>
+
+Thread: 19cf08c38be0ea48
+  邮件数: 1
+  主题: Your X account has been suspended
+  邮箱: notify@x.com
+  最后邮件: Sun, 15 Mar 2026 08:10:47 +0000 | X <notify@x.com>
+

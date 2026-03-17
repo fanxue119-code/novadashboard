@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Dance Camp - 老师管理系统</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 50px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px 50px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-item .number {
+            font-size: 36px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .stat-item .label {
+            font-size: 14px;
+            color: #6c757d;
+            margin-top: 8px;
+        }
+        .tables-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .table-card {
+            padding: 30px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .table-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        .table-card .icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .table-card .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .table-card .description {
+            font-size: 14px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎭 NOVA Dance Camp</h1>
+            <p>老师管理系统</p>
+        </div>
+
+        <div class="content">
+            <div class="stats" id="stats"></div>
+
+            <div class="tables-grid">
+                <a href="01_teachers_info.html" class="table-card">
+                    <div class="icon">👤</div>
+                    <div class="title">老师信息表</div>
+                    <div class="description">基本信息、联系方式、社交媒体</div>
+                </a>
+
+                <a href="02_cost_details.html" class="table-card">
+                    <div class="icon">💰</div>
+                    <div class="title">合作要素表</div>
+                    <div class="description">价格、机票、酒店、Per Diem、特殊要求</div>
+                </a>
+
+                <a href="03_communication_progress.html" class="table-card">
+                    <div class="icon">💬</div>
+                    <div class="title">沟通进度表</div>
+                    <div class="description">邮件数量、皮球在谁那、沟通要点、下一步行动</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>最后更新: <span id="last-updated"></span></p>
+        </div>
+    </div>
+
+    <script>
+        async function updateStats() {
+            try {
+                const response = await fetch('teachers_manual.json');
+                const data = await response.json();
+                const teachers = data.teachers || [];
+
+                const mainCount = teachers.filter(t => t.roster === 'main').length;
+                const backupCount = teachers.filter(t => t.roster === 'backup').length;
+                const totalEmails = teachers.reduce((sum, t) => sum + (t.messageCount || 0), 0);
+
+                document.getElementById('stats').innerHTML = `
+                    <div class="stat-item">
+                        <div class="number">${teachers.length}</div>
+                        <div class="label">总老师数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">${mainCount}</div>
+                        <div class="label">本期主阵容</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">${backupCount}</div>
+                        <div class="label">Backup</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">${totalEmails}</div>
+                        <div class="label">总邮件数</div>
+                    </div>
+                `;
+
+                document.getElementById('last-updated').textContent = new Date().toLocaleString('zh-CN');
+            } catch (error) {
+                console.error('加载数据失败:', error);
+            }
+        }
+
+        updateStats();
+    </script>
+</body>
+</html>
